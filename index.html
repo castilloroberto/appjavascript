@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProductsApp</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- cdn bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/lux/bootstrap.min.css"
+      integrity="sha384-9+PGKSqjRdkeAU7Eu4nkJU8RFaH8ace8HGXnkiKMP9I9Te0GJ4/km3L1Z8tXigpG"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- navegacion -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"">
+      <div class="container"> <a class="navbar-brand" href="/">App-Products</a></div>
+    </nav>
+
+    <!-- contenido principal -->
+    <div id="main"class="container">
+        <!-- applicacion -->
+        <div id="app" class="row pt-5">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header "><h4>Agregar producto</h4></div>
+                   <!-- formulario -->
+                    <form class="card-body" id="product-form" >
+
+                       <div class="form-group">
+                        <input type="text" id="name" placeholder="Nombre" class="form-control">
+                       </div>
+                       <div class="form-group">
+                           <input type="number" step="0.01" name="" id="price" placeholder="Precio" class="form-control" >
+                       </div>
+                       <div class="form-group">
+                        <input type="number" id="year" min="1990" value="2018" placeholder="año" class="form-control">
+                       </div>
+                       <div class="form-group">
+                        <input type="submit" value="Enviar" class="btn btn-primary btn-block">
+                       </div>
+          
+                    </form>
+                </div>
+            </div>
+            <div id="product-list" class="col md-8">
+            </div>
+
+        </div>
+    </div>
+<script src="app.js"></script>
+  </body>
+</html>
